@@ -1,0 +1,21 @@
+@font-face {
+    font-family:"schabo" ;
+    src: url(schabo-condensed/SCHABO-Condensed.woff);
+}
+.mainHeading{
+    text-transform: uppercase;
+}
+body{
+    font-family:Space Grotesk;
+}
+#cardsSection::before {
+    content: ""; 
+    display: block;
+    width: 500px;
+    height: 300px;
+    z-index: -1;
+    background-color: white;
+    filter: blur(100px);
+    border-radius: 50%;
+    position: absolute; 
+}
