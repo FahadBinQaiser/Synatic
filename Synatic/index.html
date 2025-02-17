@@ -1,194 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Synatic</title>
-    <link rel="shortcut icon" href="images/favicon_io/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="shortcut icon"
+      href="images/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-black text-white flex justify-center flex-col">
+  </head>
+  <body class="bg-black text-white flex justify-center flex-col">
     <!-- Navbar -->
-    <nav class="max-w-5xl flex justify-center items-center w-full mx-auto mt-4 overflow-hidden">
-        <div class="navbar h-16 w-full flex justify-between px-8 rounded-xl items-center bg-white text-black">
-             <h1 class="navbarHeading text-xl">Synatic</h1>
-             <ul class="navbarLinks flex flex-row space-x-8 text-sm">
-                 <li>
-                  <a href="#" class="border-b-2 border-transparent hover:border-black hover:border-b-2 transition-all duration-300 ease-out">Home</a>
-                </li>
-                 <li>
-                  <a href="#" class="border-b-2 border-transparent hover:border-black hover:border-b-2 transition-all duration-300 ease-out">About</a>
-                </li>
-                 <li>
-                  <a href="#" class="border-b-2 border-transparent hover:border-black hover:border-b-2 transition-all duration-300 ease-out">Work</a>
-                </li>
-                 <li>
-                  <a href="#" class="border-b-2 border-transparent hover:border-black hover:border-b-2 transition-all duration-300 ease-out">Blog</a>
-                </li>
-                 <li><a href="#" class="border-b-2 border-transparent hover:border-black hover:border-b-2 transition-all duration-300 ease-out">Contact</a>
-                </li>
-             </ul>
-             <div class="button px-4 py-2 bg-black hover:bg-[#333] text-sm text-white rounded-3xl">
-                 <button class="navbarButton cursor-pointer">Sign Up</button>
-             </div>
+    <nav
+      class="max-w-5xl flex justify-center items-center w-full mx-auto mt-0 md:px-20 md:mt-4 overflow-hidden"
+    >
+      <div
+        class="navbar h-16 w-full flex justify-between px-8 rounded-none md:rounded-xl items-center bg-white text-black"
+      >
+        <h1 class="navbarHeading text-xl">Synatic</h1>
+        <ul class="navbarLinks hidden sm:flex flex-row space-x-8 text-sm">
+          <li>
+            <a
+              href="#"
+              class="border-b-2 border-transparent hover:border-black hover:border-b-2 transition-all duration-300 ease-out"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="border-b-2 border-transparent hover:border-black hover:border-b-2 transition-all duration-300 ease-out"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="border-b-2 border-transparent hover:border-black hover:border-b-2 transition-all duration-300 ease-out"
+              >Work</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="border-b-2 border-transparent hover:border-black hover:border-b-2 transition-all duration-300 ease-out"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="border-b-2 border-transparent hover:border-black hover:border-b-2 transition-all duration-300 ease-out"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div
+          class="button px-4 py-2 bg-black hover:bg-[#333] text-sm text-white rounded-3xl"
+        >
+          <button class="navbarButton cursor-pointer">Sign Up</button>
         </div>
-     </nav>
+      </div>
+    </nav>
     <!-- Navbar -->
     <!-- Hero Section -->
     <main class="hero relative flex justify-center items-center min-h-[88vh]">
-        <div style="font-family:Space Grotesk;" class="heroSection space-y-3 flex flex-col justify-center items-center text-white relative z-10">
-            <h1 class="text-7xl font-bold mainHeading">Synatic</h1>
-                <h3 class="text-3xl">Your Trusted Partner in Modern Medicine.</h3>
-                    <p class="text-center text-sm text-balance">Synatic is your gateway to smarter healthcare, 
-                    combining innovation with reliability. <span class="sm:flex">From seamless medical
-                        solutions to expert guidance, we make healthcare effortless and accessible.</span>
-                    </p>
-        </div>
-        <div class="absolute inset-0 flex justify-center items-center -z-10">
-            <div class="w-[400px] h-[300px] bg-gradient-to-r from-gray-400 via-white to-gray-400 rounded-full blur-3xl opacity-30"></div>
-        </div>
-    </main>    
+      <div
+        class="heroSection space-y-3 flex flex-col justify-center items-center text-center text-white relative z-10"
+      >
+        <h1 class="text-7xl font-bold mainHeading">Synatic</h1>
+        <h3 class="text-2xl sm:text-3xl text-balance">
+          Your Trusted Partner
+          <span class="block sm:inline">in Modern Medicine.</span>
+        </h3>
+        <p class="text-center text-sm text-balance">
+          Synatic is your gateway to smarter healthcare, combining innovation
+          with reliability.
+          <span class="sm:flex"
+            >From seamless medical solutions to expert guidance, we make
+            healthcare effortless and accessible.</span
+          >
+        </p>
+      </div>
+      <div class="absolute inset-0 flex justify-center items-center -z-10">
+        <div
+          class="w-[390px] h-[300px] bg-gradient-to-r from-gray-400 via-white to-gray-400 rounded-full blur-3xl opacity-30"
+        ></div>
+      </div>
+    </main>
     <!-- Hero Section -->
     <!-- Card Section -->
-    <section id="cardsSection" class="card flex justify-center items-center flex-col sm:flex-row lg:flex-row gap-2 pb-20 relative">
-     
-      </section>
+    <section
+      id="cardsSection"
+      class="card flex justify-center items-center flex-col sm:flex-row lg:flex-row px-4 md:px-0 gap-2 pb-20 relative"
+    ></section>
     <!-- Card Section -->
     <!-- Text and Image section  -->
-     <div class="imageAndText flex flex-row justify-between items-center mx-auto pb-20">
-        <div class="leftSide w-[500px] h-[500px] flex justify-center flex-col p-20 items-start">
-            <h1 class="text-4xl pb-4">Making Healthcare Simple & Smarter</h1>
-            <p>We're here to make healthcare easier. With smart solutions and the latest tech, we help you access the care and support you need without the hassle.</p>
-        </div>
-        <div class="rightSide w-[500px] h-[500px] flex justify-center items-center">
-            <img src="images/medicine.png" class="w-[300px] h-[300px]" alt="">
-        </div>
-     </div>
+    <div
+      class="imageAndText flex flex-col sm:flex-row justify-between items-center mx-auto pb-20 overflow-hidden"
+    >
+      <div
+        class="leftSide w-full h-full md:w-[500px] md:h-[500px] flex justify-center flex-col p-4 md:p-20 items-center"
+      >
+        <h1 class="text-4xl pb-4">Making Healthcare Simple & Smarter</h1>
+        <p>
+          We're here to make healthcare easier. With smart solutions and the
+          latest tech, we help you access the care and support you need without
+          the hassle.
+        </p>
+      </div>
+      <div
+        class="rightSide pt-10 sm:pt-0 w-full h-full md:w-[500px] md:h-[500px] flex justify-center items-center"
+      >
+        <img
+          src="images/medicine.png"
+          class="w-full h-full sm:w-[320px] sm:h-[300px] object-cover"
+          alt=""
+        />
+      </div>
+    </div>
     <!-- Text and Image section  -->
     <!-- Picture section -->
-     <div class="picture max-w-5xl mx-auto flex flex-col space-y-4 items-center justify-center pb-20 relative">
-        <h1 class="text-4xl">The perfection of medical support at Synatic, Synatic provides medical support even at home too now</h1>
-        <img src="images/doctors.jpg" class="rounded-xl w-full object-cover h-[600px]" alt="">
-        <div class="absolute inset-0 flex justify-center items-center -z-10">
-            <div class="w-[600px] h-[800px] bg-gradient-to-r from-gray-400 via-white to-gray-400 rounded-full blur-3xl opacity-30"></div>
-        </div>
+    <div
+      class="picture max-w-5xl mx-auto flex flex-col px-4 lg:px-0 space-y-4 items-center justify-center pb-20 relative"
+    >
+      <h1 class="text-2xl sm:text-4xl text-balance">
+        The perfection of medical support at Synatic, Synatic provides medical
+        support even at home too now
+      </h1>
+      <img
+        src="images/doctors.jpg"
+        class="rounded-xl w-full object-cover h-full sm:h-[600px]"
+        alt=""
+      />
+      <div class="absolute inset-0 flex justify-center items-center -z-10">
+        <div
+          class="w-[600px] h-[800px] bg-gradient-to-r from-gray-400 via-white to-gray-400 rounded-full blur-3xl opacity-30"
+        ></div>
+      </div>
 
-        <p>At Synatic, we believe quality medical support should be available wherever you are. With our advanced healthcare solutions, you can now receive expert medical assistance from the comfort of your home. Whether it’s consultations, prescriptions, or emergency guidance, Synatic ensures seamless and reliable care—anytime, anywhere.</p>
-     </div>
+      <p>
+        At Synatic, we believe quality medical support should be available
+        wherever you are. With our advanced healthcare solutions, you can now
+        receive expert medical assistance from the comfort of your home. Whether
+        it’s consultations, prescriptions, or emergency guidance, Synatic
+        ensures seamless and reliable care—anytime, anywhere.
+      </p>
+    </div>
     <!-- Picture section -->
     <!-- Services section -->
-    <section id="servicesSection" class="services max-w-5xl mx-auto py-16">
-        <h2 class="text-4xl font-bold text-center mb-10">Our Services</h2>
-      </section>
+    <section
+      id="servicesSection"
+      class="services max-w-5xl px-4 lg:px-0 mx-auto py-16"
+    >
+      <h2 class="text-4xl font-bold text-center mb-10">Our Services</h2>
+    </section>
     <!-- Services section -->
     <!-- FAQ section -->
-    <section class="faq max-w-4xl mx-auto py-10 px-6 text-black relative">
-        <h2 class="text-4xl font-bold text-white text-center mb-10">Frequently Asked Questions</h2>
-        <div class="absolute inset-0 flex justify-center items-center -z-10">
-          <div class="w-[600px] h-[500px] bg-gradient-to-r from-gray-400 via-white to-gray-400 rounded-full blur-3xl opacity-30"></div>
+    <section class="faq max-w-4xl mx-auto py-10 px-4 text-black relative">
+      <h2 class="text-4xl font-bold text-white text-center mb-10">
+        Frequently Asked Questions
+      </h2>
+      <div class="absolute inset-0 flex justify-center items-center -z-10">
+        <div
+          class="w-[600px] h-[500px] bg-gradient-to-r from-gray-400 via-white to-gray-400 rounded-full blur-3xl opacity-30"
+        ></div>
       </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-lg font-semibold">What services does Synatic offer?</h3>
-            <p class="text-gray-600 mt-2">
-              Synatic provides telemedicine, home healthcare, and 24/7 emergency support, ensuring high-quality medical assistance anytime.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-lg font-semibold">How does telemedicine work?</h3>
-            <p class="text-gray-600 mt-2">
-              Book an appointment online, and connect with certified doctors via video call for consultations, prescriptions, and care plans.
-            </p>
-          </div>
-      
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-lg font-semibold">Is home healthcare available in all cities?</h3>
-            <p class="text-gray-600 mt-2">
-              Currently, it’s available in major cities, with plans to expand. Check availability by entering your location on our website.
-            </p>
-          </div>
-      
-          <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-            <h3 class="text-lg font-semibold">How fast is emergency support?</h3>
-            <p class="text-gray-600 mt-2">
-              Our emergency team operates 24/7, dispatching ambulances or medical professionals within minutes, depending on your location.
-            </p>
-          </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-lg font-semibold">
+            What services does Synatic offer?
+          </h3>
+          <p class="text-gray-600 mt-2">
+            Synatic provides telemedicine, home healthcare, and 24/7 emergency
+            support, ensuring high-quality medical assistance anytime.
+          </p>
         </div>
-      </section>
-      
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-lg font-semibold">How does telemedicine work?</h3>
+          <p class="text-gray-600 mt-2">
+            Book an appointment online, and connect with certified doctors via
+            video call for consultations, prescriptions, and care plans.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-lg font-semibold">
+            Is home healthcare available in all cities?
+          </h3>
+          <p class="text-gray-600 mt-2">
+            Currently, it’s available in major cities, with plans to expand.
+            Check availability by entering your location on our website.
+          </p>
+        </div>
+
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-lg font-semibold">How fast is emergency support?</h3>
+          <p class="text-gray-600 mt-2">
+            Our emergency team operates 24/7, dispatching ambulances or medical
+            professionals within minutes, depending on your location.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ section -->
     <!-- Testimonial section -->
-    <section class="testimonials max-w-4xl mx-auto text-center p-6">
+    <section class="testimonials max-w-4xl mx-auto text-center p-4">
       <h2 class="text-3xl font-semibold mb-6">What Our Clients Say</h2>
-      <div id="testimonial-container" class="bg-white text-black p-6 rounded-xl shadow-md transition-opacity duration-500 opacity-100">
-          <p class="text-lg" id="testimonial-text">"Synatic's healthcare support is truly amazing! The doctors are professional and caring. Highly recommended!"</p>
-          <h4 class="mt-4 font-semibold" id="testimonial-author">- Alex Johnson</h4>
+      <div
+        id="testimonial-container"
+        class="bg-white text-black p-6 rounded-xl shadow-md transition-opacity duration-500 opacity-100"
+      >
+        <p class="text-lg" id="testimonial-text">
+          "Synatic's healthcare support is truly amazing! The doctors are
+          professional and caring. Highly recommended!"
+        </p>
+        <h4 class="mt-4 font-semibold" id="testimonial-author">
+          - Alex Johnson
+        </h4>
       </div>
       <div class="mt-6 flex justify-center gap-6">
-          <button onclick="prevTestimonial()" class="bg-white text-black px-5 py-2 rounded-lg hover:bg-black hover:text-white transition-all duration-300 hover:cursor-pointer ease-out">← Previous</button>
-          <button onclick="nextTestimonial()" class="bg-white text-black px-5 py-2 rounded-lg hover:bg-black hover:text-white transition-all duration-300 hover:cursor-pointer ease-out">Next →</button>
+        <button
+          onclick="prevTestimonial()"
+          class="bg-white text-black px-5 py-2 rounded-lg hover:bg-black hover:text-white transition-all duration-300 hover:cursor-pointer ease-out"
+        >
+          ← Previous
+        </button>
+        <button
+          onclick="nextTestimonial()"
+          class="bg-white text-black px-5 py-2 rounded-lg hover:bg-black hover:text-white transition-all duration-300 hover:cursor-pointer ease-out"
+        >
+          Next →
+        </button>
       </div>
-  </section>
+    </section>
     <!-- Testimonial section -->
     <!-- CTA section -->
-    <section class="cta flex items-center justify-center my-14 min-h-[40vh] w-full bg-white">
+    <section
+      class="cta flex items-center justify-center my-14 min-h-[40vh] w-full bg-white"
+    >
       <div class="text-center p-6 rounded-xl w-full text-black">
-          <h2 class="text-2xl font-bold mb-2">Get Ready for Some Medical Support?</h2>
-          <p class="text-lg mb-4">Shoot us a message on Gmail or LinkedIn!</p>
-          <a href="https://www.linkedin.com/in/fahaddev/" target="blank">
-            <button class="bg-black text-white px-5 py-3 cursor-pointer rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-[#333] hover:text-white">LinkedIn</button>
-          </a>    
-          <a href="mailto:fahadbinqaiser3@gmail.com">
-            <button class="bg-black text-white px-5 py-3 cursor-pointer rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-[#333] hover:text-white">Gmail</button>
-          </a>    
+        <h2 class="text-2xl font-bold mb-2">
+          Get Ready for Some Medical Support?
+        </h2>
+        <p class="text-lg mb-4">Shoot us a message on Gmail or LinkedIn!</p>
+        <a href="https://www.linkedin.com/in/fahaddev/" target="blank">
+          <button
+            class="bg-black text-white px-5 py-3 cursor-pointer rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-[#333] hover:text-white"
+          >
+            LinkedIn
+          </button>
+        </a>
+        <a href="mailto:fahadbinqaiser3@gmail.com">
+          <button
+            class="bg-black text-white px-5 py-3 cursor-pointer rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-[#333] hover:text-white"
+          >
+            Gmail
+          </button>
+        </a>
       </div>
-  </section>  
+    </section>
     <!-- CTA section -->
     <!-- Footer section -->
-    <footer class="footer bg-black text-white overflow-hidden py-10 ">
-      <div class="max-w-6xl mx-auto px-6  grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-        <div class="absolute top-80 left-0 bottom-0 flex justify-center items-center z-10">
-          <div class="w-[230px] h-[170px] bg-gradient-to-r from-gray-400 via-white to-gray-400 rounded-full blur-3xl opacity-30"></div>
-      </div>
-        <div class="absolute top-80 right-0 bottom-0 flex justify-center items-center z-10">
-          <div class="w-[230px] h-[170px] bg-gradient-to-r from-gray-400 via-white to-gray-400 rounded-full blur-3xl opacity-30"></div>
-      </div>
-          <div>
-              <h3 class="text-2xl font-semibold mb-3">Synatic</h3>
-              <p class="text-gray-300">Providing top-notch medical support and healthcare solutions anytime, anywhere.</p>
+    <footer class="footer bg-black text-white overflow-hidden py-10">
+      <div
+        class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 relative"
+      >
+        <div
+          class="absolute top-[500px] md:top-80 left-0 bottom-0 flex justify-center items-center z-10"
+        >
+          <div
+            class="w-[230px] h-[170px] bg-gradient-to-r from-gray-400 via-white to-gray-400 rounded-full blur-3xl opacity-30"
+          ></div>
+        </div>
+        <div
+          class="absolute top-[500px] md:top-80 right-0 bottom-0 flex justify-center items-center z-10"
+        >
+          <div
+            class="w-[230px] h-[170px] bg-gradient-to-r from-gray-400 via-white to-gray-400 rounded-full blur-3xl opacity-30"
+          ></div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-3">Synatic</h3>
+          <p class="text-gray-300">
+            Providing top-notch medical support and healthcare solutions
+            anytime, anywhere.
+          </p>
+        </div>
+        <div class="pl-0 md:pl-16">
+          <h4 class="text-xl font-semibold mb-3">Essentials</h4>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white transition duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white transition duration-300"
+                >Work</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white transition duration-300"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-3">Wanna work together?</h4>
+          <p class="text-gray-300 mb-2">
+            <a href="mailto:fahadbinqaiser3@gmail.com">Gmail</a>
+          </p>
+          <div class="flex gap-4">
+            <p class="text-gray-300 mb-4">
+              <a href="https://www.linkedin.com/in/fahaddev/">LinkedIn</a>
+            </p>
+            <a
+              href="https://www.linkedin.com/in/fahaddev/"
+              class="text-gray-300 hover:text-white transition duration-300"
+              ><i class="fab fa-linkedin text-2xl"></i
+            ></a>
           </div>
-          <div class="pl-16">
-              <h4 class="text-xl font-semibold mb-3">Essentials</h4>
-              <ul class="space-y-2">
-                  <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
-                  <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">About</a></li>
-                  <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Work</a></li>
-                  <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Blog</a></li>
-              </ul>
-          </div>
-          <div>
-              <h4 class="text-xl font-semibold mb-3">Wanna work together?</h4>
-              <p class="text-gray-300 mb-2"><a href="mailto:fahadbinqaiser3@gmail.com">Gmail</a></p>
-            <div class="flex gap-4">
-              <p class="text-gray-300 mb-4"><a href="https://www.linkedin.com/in/fahaddev/">LinkedIn</a></p>
-                <a href="https://www.linkedin.com/in/fahaddev/" class="text-gray-300 hover:text-white transition duration-300"><i class="fab fa-linkedin text-2xl"></i></a>
-              </div>
-          </div>
+        </div>
       </div>
-      <div class="text-center text-gray-400 mt-6 text-sm border-t border-gray-700 pt-4">
-          &copy; 2025 Synatic. All rights reserved.
+      <div
+        class="text-center text-gray-400 mt-6 text-sm border-t border-gray-700 pt-4"
+      >
+        &copy; 2025 Synatic. All rights reserved.
       </div>
-  </footer>
+    </footer>
     <!-- Footer section -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

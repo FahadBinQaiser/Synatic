@@ -1,21 +1,24 @@
 @font-face {
-    font-family:"schabo" ;
-    src: url(schabo-condensed/SCHABO-Condensed.woff);
+  font-family: "schabo";
+  src: url(schabo-condensed/SCHABO-Condensed.woff);
 }
-.mainHeading{
-    text-transform: uppercase;
+.mainHeading {
+  text-transform: uppercase;
 }
-body{
-    font-family:Space Grotesk;
+body {
+  font-family: Space Grotesk;
+  overflow-x: hidden;
 }
-#cardsSection::before {
-    content: ""; 
+@media (min-width: 640px) {
+  #cardsSection::before {
+    content: "";
     display: block;
-    width: 500px;
+    width: 340px;
     height: 300px;
     z-index: -1;
     background-color: white;
     filter: blur(100px);
     border-radius: 50%;
-    position: absolute; 
+    position: absolute;
+  }
 }

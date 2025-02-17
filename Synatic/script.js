@@ -25,7 +25,7 @@ const cardBox = document.getElementById("cardsSection");
 cards.forEach((card) => {
     const cardDiv = document.createElement("div");
     cardDiv.innerHTML = `
-    <div class="beforeCircle sm:w-60 sm:h-80 lg:w-80 lg:h-80 bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] p-9 space-y-3 relative overflow-hidden">
+    <div class="beforeCircle rounded-lg sm:rounded-none sm:w-60 sm:h-80 lg:w-80 lg:h-80 bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] p-9 space-y-3 relative overflow-hidden">
           <div class="w-24 h-24 bg-black rounded-full absolute -right-5 -top-7">
             <p class="absolute bottom-6 left-7 text-white text-2xl">${card.number}</p>
           </div>
